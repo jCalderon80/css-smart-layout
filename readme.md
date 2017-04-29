@@ -19,11 +19,11 @@ In case you need a more deeper explanation this is how you should do it, you sta
 
 The following example shows a graphic representation of how you can manipulate one single layout across devices with a few css classes.
 
-![Desktop layout view](https://jcalderon80.github.io/css-smart-layout/images/layout-stage-1.jpg)
+Desktop View![Desktop layout view](https://jcalderon80.github.io/css-smart-layout/images/layout-stage-1.jpg)
 
-![Tablet layout view](https://jcalderon80.github.io/css-smart-layout/images/layout-stage-2.jpg)
+Tablet Layout view![Tablet layout view](https://jcalderon80.github.io/css-smart-layout/images/layout-stage-2.jpg)
 
-![Mobile layout View](https://jcalderon80.github.io/css-smart-layout/images/layout-stage-3.jpg)
+Mobile Layout View![Mobile layout View](https://jcalderon80.github.io/css-smart-layout/images/layout-stage-3.jpg)
 
 This behavior is possible using the _SWITCHES_: csl-reverse, csl-start-*, csl-stop-*, csl-wrap-*, csl-flipwrap. I will go over these in the [Demo page](demo.html).
 
