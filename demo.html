@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>CSL:The impolite documentation</title>
+        <link rel="icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Abel|Pathway+Gothic+One" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/csl.css">
+        <script src="js/library.js" type="application/javascript"></script>
+        <script src="js/main.js" type="application/javascript"></script>
+    </head>
+    <body id="demo">
+        <div>
+            <header class="main-header">
+                <div class="layout-box">
+                    <div class="csl-2-third csl-reverse csl-stop-549">
+                        <div class="header-wrapper add-pad">
+                            <figure class="logo">
+                                <img src="images/CSL-logo.svg" alt="CSL Logo">
+                            </figure>
+                            <div class="title-wrapper">
+                                <h1 class="title">CSL : Demo page</h1>
+                            </div>
+                        </div>
+                        <div class="nav-wrapper add-pad">
+                            <div class="nav-tab"><span>MENU</span><i id="nav-toggle" class="nav-icon"></i></div>
+                            <nav id="main-nav-drawer" class="main-nav hidden">
+                                <ul>
+                                    <li class="nav-item"><a href="">DOWNLOAD</a></li>
+                                    <li class="nav-item"><a href="">CONTRIBUTE</a></li>
+                                    <li class="nav-item"><a href="/">HOME</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="content demo">
+                <div class="layout-box add-pad">
+                    <div class="header-spacer"></div>
+                    <div class="add-pad">
+                        <section class="section">
+                            <h2 class="section-title">WELCOME TO THE DEMO PAGE</h2>
+                            <p>This demo does not cover every single combination of classes, but it covers some possible scenarios, here's a description of all the switches available in the framework, you will also find a sweet table below.</p>
+                            <ul class="content-list">
+                                <li><a>CSL-START-[breakpoint]</a> <span>The layout behavior will be enabled at the breakpoint stated in the class, before that each column will occupy 100% of its parent width.</span></li>
+                                <li><a>CSL-STOP-[breakpoint]</a> <span>It stops the layout behavior at the breakpoint stated in the class.</span></li>
+                                <li><a>CSL-WRAP-[breackpoint]</a> <span>Works only on selected layouts, this class will wrap the layouts on 2 rows starting at the breakpoint stated in the class</span></li>
+                                <li><a>CSL-FLIPWRAP</a> <span>When the layout is wrapped in 2 rows, this class simply flip the position of the rows on the stack, no need to state a breakpoint.</span></li>
+                            </ul>
+                            <p>See this cool table to see all the classes and the switches available for them.</p>
+                            <div class="table-container">
+                                <table class="show-table">
+                                    <thead>
+                                        <tr>
+                                            <th>CLASS</th>
+                                            <th>CSL-REVERSE<i class="annot">*</i></th>
+                                            <th>CSL-START</th>
+                                            <th>CSL-STOP</th>
+                                            <th>CSL-WRAP</th>
+                                            <th>CSL-FLIPWRAP<i class="annot">*</i></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>csl-2-half</td>
+                                            <td></td>
+                                            <td><i class="yes"></i></td>
+                                            <td><i class="yes"></i></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>csl-2-third</td>
+                                            <td><i class="yes"></i></td>
+                                            <td><i class="yes"></i></td>
+                                            <td><i class="yes"></i></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>csl-2-fourth</td>
+                                            <td><i class="yes"></i></td>
+                                            <td><i class="yes"></i></td>
+                                            <td><i class="yes"></i></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>csl-3-half</td>
+                                            <td><i class="yes"></i></td>
+                                            <td><i class="yes"></i></td>
+                                            <td><i class="yes"></i></td>
+                                            <td><i class="yes"></i></td>
+                                            <td><i class="yes"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>csl-3-third</td>
+                                            <td></td>
+                                            <td><i class="yes"></i></td>
+                                            <td><i class="yes"></i></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>csl-3-fourth</td>
+                                            <td></td>
+                                            <td><i class="yes"></i></td>
+                                            <td><i class="yes"></i></td>
+                                            <td><i class="yes"></i></td>
+                                            <td><i class="yes"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>csl-4-fourth</td>
+                                            <td></td>
+                                            <td><i class="yes"></i></td>
+                                            <td><i class="yes"></i></td>
+                                            <td><i class="yes"></i></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>csl-5-fifth</td>
+                                            <td></td>
+                                            <td><i class="yes"></i></td>
+                                            <td><i class="yes"></i></td>
+                                            <td><i class="yes"></i></td>
+                                            <td><i class="yes"></i></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div>
+                                    <p class="text-tag">You must specify the breakpoint for Start, Stop and Wrap switches, all breakpoints available: 1219, 989, 769 and 549.</p>
+                                    <p class="text-tag">*No breakpoint needed</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="demo-box section">
+                            <h2 class="section-title">The Wrap Switch</h2>
+                            <div class="demo-container">
+                                <h3 class="demo-title">CSL-3-FOURTH CSL-WRAP-769</h3>
+                                <div class="csl-3-fourth csl-wrap-769">
+                                    <div>
+                                        <div class="inner-box">
+                                            <figure>
+                                                <img src="images/stormtrooper-1343877_1280.jpg">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inner-box">
+                                            <h3>The Empire Strikes Back</h3>
+                                            <p>Luke? Lord Vader has set a trap for him. And we're the bait. Well, he's on his way. Perfect. You fixed us all pretty good, didn't you?  My friend! Stop! I've done all I can do. I'm sorry I couldn't do better, but I have my own problems. Yeah, you're a real hero. You certainly have a way with people.</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inner-box">
+                                            <figure>
+                                                <img src="images/star-wars-931946_1280.jpg">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">The FlipWrap Switch</h2>
+                            <div class="demo-container">
+                                <h3 class="demo-title">CSL-3-FOURTH CSL-WRAP-769 CSL-FLIPWRAP</h3>
+                                <div class="csl-3-fourth csl-wrap-769 csl-flipwrap">
+                                    <div>
+                                        <div class="inner-box">
+                                            <figure>
+                                                <img src="images/stormtrooper-1343877_1280.jpg">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inner-box">
+                                            <h3>The Empire Strikes Back</h3>
+                                            <p>Laugh it up, fuzz ball. But you didn't see us alone in the south passage. She expressed her true feelings for me. My...! Why, you stuck up...half-witted...scruffy-looking...nerf-herder! Who's scruffy-looking? I must have hit her pretty close to the mark to get her all riled up like that, huh, kid? Why, I guess you don't know everything about women yet? Headquarters personnel, report to command center. Take it easy. Excuse us, please.</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inner-box">
+                                            <figure>
+                                                <img src="images/star-wars-931946_1280.jpg">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">The Stop Switch</h2>
+                            <div class="demo-container">
+                                <h3 class="demo-title">CSL-4-FOURTH CSL-STOP-549</h3>
+                                <div class="csl-4-fourth csl-stop-549">
+                                    <div>
+                                        <div class="inner-box">
+                                            <figure>
+                                                <img src="images/stormtrooper-1343877_1280.jpg">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inner-box">
+                                            <figure>
+                                                <img src="images/toy-932922_1280.jpg">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inner-box">
+                                            <figure>
+                                                <img src="images/stormtrooper-1995015_1280.jpg">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inner-box">
+                                            <figure>
+                                                <img src="images/star-wars-931946_1280.jpg">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">The Start Switch</h2>
+                            <div class="demo-container">
+                                <h3 class="demo-title">CSL-3-HALF CSL-START-1219 CSL-STOP-769</h3>
+                                <div class="csl-3-half csl-start-1219 csl-stop-769">
+                                    <div>
+                                        <div class="inner-box">
+                                            <h3>A New Hope</h3>
+                                            <p>All flight trooper, man your stations. All flight troops, man your stations. So...you got your reward and you're just leaving then? That's right, yeah! I got some old debts I've got to pay off with this stuff. Even if I didn't, you don't think I'd be fool enough to stick around here, do you? Why don't you come with us? You're pretty good in a fight. I could use you. Come on! Why don't you take a look around? You know what's about to happen, what they're up against. They could use a good pilot like you. You're turning your back on them.</p><p>Are you all right? What's wrong? I felt a great disturbance in the Force...as if millions of voices suddenly cried out in terror and were suddenly silenced. I fear something terrible has happened. You'd better get on with your exercises. Well, you can forget your troubles with those Imperial slugs. I told you I'd outrun 'em. Don't everyone thank me at once. Anyway, we should be at Alderaan about oh-two-hundred hours. Now be careful, Artoo. He made a fair move. Screaming about it won't help you. Let him have it. It's not wise to upset a Wookiee. But sir, nobody worries about upsetting a droid. That's 'cause droids don't pull people's arms out of their socket when they lose. Wookiees are known to do that. I see your point, sir. I suggest a new strategy, Artoo. Let the Wookiee win.</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inner-box">
+                                            <h3>The Empire Strikes Back</h3>
+                                            <p>Luke? Lord Vader has set a trap for him. And we're the bait. Well, he's on his way. Perfect. You fixed us all pretty good, didn't you?  My friend! Stop! I've done all I can do. I'm sorry I couldn't do better, but I have my own problems. Yeah, you're a real hero. You certainly have a way with people.</p><p>Laugh it up, fuzz ball. But you didn't see us alone in the south passage. She expressed her true feelings for me. My...! Why, you stuck up...half-witted...scruffy-looking...nerf-herder! Who's scruffy-looking? I must have hit her pretty close to the mark to get her all riled up like that, huh, kid? Why, I guess you don't know everything about women yet? Headquarters personnel, report to command center. Take it easy. Excuse us, please.</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inner-box">
+                                            <h3>The Return of the Jedi</h3>
+                                            <p>Lord Vader, this is an unexpected pleasure. We're honored by your presence. You may dispense with the pleasantries, Commander. I'm here to put you back on schedule. I assure you, Lord Vader, my men are working as fast as they can. Perhaps I can find new ways to motivate them. I tell you, this station will be operational as planned. </p><p>Look. I want you to take her. I mean it. Take her. You need all the help you can get. She's the fastest ship in the fleet. All right, old buddy. You know, I know what she means to you. I'll take good care of her. She-she won't get a scratch. All right? Right. I got your promise now. Not a scratch. Look, would you get going, you pirate. Good luck. You, too.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Let's mix it in a nice way</h2>
+                            <div class="demo-container">
+                                <h3 class="demo-title">CSL-3-HALF CSL-REVERSE CSL-WRAP-769 CSL-FLIP CSL-STOP-549</h3>
+                                <div class="csl-3-half csl-reverse csl-wrap-769 csl-flipwrap csl-stop-549">
+                                    <div>
+                                        <div class="inner-box">
+                                            <figure>
+                                                <img src="images/action-figure-1853285_1280.jpg">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inner-box">
+                                            <figure>
+                                                <img src="images/star-wars-931946_1280.jpg">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inner-box">
+                                            <h3>The Empire Strikes Back</h3>
+                                            <p>Luke? Lord Vader has set a trap for him. And we're the bait. Well, he's on his way. Perfect. You fixed us all pretty good, didn't you?  My friend! Stop! I've done all I can do. I'm sorry I couldn't do better, but I have my own problems. Yeah, you're a real hero. You certainly have a way with people.</p><p>Laugh it up, fuzz ball. But you didn't see us alone in the south passage. She expressed her true feelings for me. My...! Why, you stuck up...half-witted...scruffy-looking...nerf-herder! Who's scruffy-looking? I must have hit her pretty close to the mark to get her all riled up like that, huh, kid? Why, I guess you don't know everything about women yet? Headquarters personnel, report to command center. Take it easy. Excuse us, please.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="section-title">Finally some nesting</h2>
+                            <div class="demo-container">
+                                <h3 class="demo-title">A 3 column layout nested inside a 2 column layout.</h3>
+                                <div class="csl-2-fourth csl-reverse csl-stop-989">
+                                    <div>
+                                        <div class="inner-box">
+                                            <p>The Emperor knew, as I did, if Anakin were to have any offspring, they would be a threat to him. That is the reason why your sister remains safely anonymous. Leia! Leia's my sister. Your insight serves you well. Bury your feelings deep down, Luke. They do you credit. But they could be made to serve the Emperor.</p><p>The main entrance to the control bunker's on the far side of that landing platform. This isn't gonna be easy. Hey, don't worry. Chewie and me got into a lot of places more heavily guarded than this. What's he saying? He says there's a secret entrance on the other side of the ridge.</p><p>Anakin was a good friend. When I first knew him, your father was already a great pilot. But I was amazed how strongly the Force was with him. I took it upon myself to train him as a Jedi. I thought that I could instruct him just as well as Yoda. I was wrong. There's still good in him. He is more machine now than man. Twisted and evil. I can't do it, Ben. You cannot escape your destiny. I can't kill my own father. Then the Emperor has already won. You were our only hope. Yoda spoke of another. The other he spoke of is your twin sister. But I have no sister. To protect you both from the Emperor, you were hidden from your father when you were born. </p><p>It's a trap!</p><p>I can't do it, Artoo. I can't go on alone. Yoda will always be with you. Obi-Wan! Why didn't you tell me? You told me Vader betrayed and murdered my father. You father was seduced by the dark side of the Force. He ceased to be Anakin Skywalker and became Darth Vader. When that happened, the good man who was your father was destroyed. So what I have told you was true... from a certain point of view. A certain point of view! Luke, you're going to find that many of the truths we cling to depend greatly on our own point of view. </p>
+                                        </div>
+                                    </div>
+                                    <div class="csl-3-third csl-start-989 csl-stop-549">
+                                        <div class="inner-box">
+                                            <figure>
+                                                <img src="images/star-wars-931946_1280.jpg">
+                                            </figure>
+                                        </div>
+                                        <div class="inner-box">
+                                            <figure>
+                                                <img src="images/action-figure-1853285_1280.jpg">
+                                            </figure>
+                                        </div>
+                                        <div class="inner-box">
+                                            <figure>
+                                                <img src="images/toy-932922_1280.jpg">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section">
+                            <p>Well, I think this is enough demo you got the whole picture, but if you think you have something to add to it, by all means stop by and contribute, I'm thinking on creating something similar with the CSS Grid System although is pretty much supported by all latest browser versions, as of the begining of 2017 unsupported browsers are still mostly used, <a href="http://caniuse.com/#feat=css-grid">Grid System Browser Support</a>.</p>
+                        </section>
+                    </div>
+                </div>
+            </main>
+            <footer class="main-footer">
+                <div class="layout-box add-pad">
+                    <div class="csl-3-fourth csl-wrap-989 csl-flipwrap csl-stop-549">
+                        <div class="footer-section">
+                            <p>All Lego pictures taken from <a href="https://pixabay.com/en/users/aitoff-388338/">Andrew Martin</a>, <a href="https://pixabay.com/en/users/tookapic-1386459/">Tookapic</a>, and <a href="https://pixabay.com/en/users/Pexels-2286921/">Pexels</a> @ <a href="https://pixabay.com">Pixabay.com</a>.</p>
+                        </div>
+                        <div class="footer-section text-center">
+                            <p>2016 Designed and developed by <a rel="author" href="https://iguana-web.net">JC @ www.iguana-web.net</a></p>
+                        </div>
+                        <div class="footer-section footer-section-right">
+                            <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><span class="cc-logo"><img src="https://i.creativecommons.org/l/by/4.0/80x15.png"></span><br>Licensed by Creative Commons Attribution.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
